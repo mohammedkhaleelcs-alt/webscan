@@ -1,0 +1,13 @@
+{
+  "hsts": "Add the Strict-Transport-Security header: Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+  "x_frame_options": "Add X-Frame-Options: DENY or SAMEORIGIN to prevent clickjacking.",
+  "csp": "Use Content-Security-Policy to restrict sources for scripts/styles and mitigate XSS.",
+  "x_content_type_options": "Use X-Content-Type-Options: nosniff to prevent MIME sniffing.",
+  "referrer_policy": "Set Referrer-Policy to control referer leakage.",
+  "x_xss_protection": "X-XSS-Protection is deprecated; favor CSP and proper output encoding.",
+  "port_80": "Port 80 uses HTTP (unencrypted). Redirect to HTTPS; close or firewall unused ports.",
+  "open_ports": "Close unnecessary ports, firewall services, and keep services updated.",
+  "ssl_weak_ciphers": "Disable weak TLS ciphers and prefer TLS1.2+/TLS1.3 with strong suites.",
+  "xss": "Mitigate XSS with strict input validation, proper escaping/encoding, and CSP.",
+  "default": "Ask about a specific header or weakness like 'HSTS', 'XSS', 'open ports'."
+}
